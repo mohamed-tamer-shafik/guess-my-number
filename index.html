@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess my number!</title>
+  </head>
+  <body>
+    <div class="parent">
+      <!-- game mode page starts -->
+      <div class="game-mode">
+        <h2>Guess My Number!</h2>
+        <p class="mode" data-mode="easy">Easy</p>
+        <p class="mode" data-mode="medium">Medium</p>
+        <p class="mode" data-mode="hard">Hard</p>
+        <!-- game mode page ends -->
+      </div>
+      <!-- game page starts -->
+      <div class="game">
+        <div class="header">
+          <div>
+            <button class="again">Again!</button>
+            <button class="return">Return</button>
+          </div>
+          <p>&lt; Between 1 and 20 &gt;</p>
+        </div>
+        <div class="center">
+          <h2>Guess My Number</h2>
+          <div class="mystery-number">
+            <div class="number">?</div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="right">
+            <p class="msg">Start guessing...</p>
+            <div class="score">
+              <span>💯 Score:</span>
+              <span class="score-counter"></span>
+            </div>
+            <div class="high-score">
+              <span>🏆 High Score :</span>
+              <span class="high-score-counter"></span>
+            </div>
+          </div>
+          <div class="left">
+            <input type="number" />
+            <button>Check!</button>
+          </div>
+        </div>
+      </div>
+      <!-- game page ends -->
+    </div>
+    <script src="js/master.js"></script>
+  </body>
+</html>
